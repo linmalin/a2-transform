@@ -2,16 +2,66 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<title>atransform</title>
 	<style>
+	@keyframes mybird{
+	0%	{background:black;
+		left:0px;
+		top:0px;
+	}
+	/*50% {
+		background:yellow;
+		left:100px;
+		top:0px;
+	}*/
+	100% {
+		background:orange;
+		left:200px;
+		top:0px;
+	}
+	
+	}
+	@-webkit-keyframes mybird { /* Safari and Chrome*/
+0%	{background:black;
+		left:0px;
+		top:0px;
+	}
+	/*50% {
+		background:yellow;
+		left:100px;
+		top:0px;
+	}*/
+	100% {
+		background:orange;
+		left:200px;
+		top:0px;
+	}
+	
+	}
+
 	div {
+		width: 500px;
+		height: 571px;
+		background: orange;
+		position: relative;
+		animation: mybird 5s infinite alternate;
+		-webkit-animation: mybird 5s infinite alternate; /* Safari and Chrome */
+}
+
+	div: hover{
+		width:500px;
+		height: 571px;
+	
+		transform: rotateY (180deg);
+		-webkit-transform: rotateY(180deg) ;/*safari*/
 
 	}
 	</style>
 
 </head>
 <body> 
-<div>
-</div>  hgf
+<div><img src="../a2-transform/images/aqua.png" width="500" height="571" alt= "big bird">
+</div>  
 </body>
 </html>
 
